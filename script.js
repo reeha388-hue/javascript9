@@ -30,24 +30,31 @@ for( let num=50;num>=1; num--){
 
 
 
-if (num==1){
-    console.log("start")
-}
-else if (num%10==0){
-    console.log("get ready ")
-}else{
-console.log(num)
-}
+// if (num==1){
+//     console.log("start")
+// }
+// else if (num%10==0){
+//     console.log("get ready ")
+// }else{
+// console.log(num)
+// }
+// }
+for (let i=1;i<=30;i++){
+    if(i%3===0&&i%5===0){
+        console.log("green")
+
+    }else if (i%3===0 ){
+        console.log("red")
+
+        }else if (i%5===0){
+            console.log("yellow")
+        }else {
+            console.log(i)
+        }
+
+    }
+
 }
 
-var num = Number(prompt("Enter a number"));
-var reverse = 0;
-
-for (; num > 0; num = (num - (num % 10)) / 10) {
-    var digit = num % 10;
-    reverse = reverse * 10 + digit;
-}
-
-console.log("Reverse Number: " + reverse);
 
 
